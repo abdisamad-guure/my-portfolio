@@ -27,3 +27,7 @@ npm.cmd run preview
 ```
 
 The contact form opens the visitor's email application with the completed message addressed to `gcigale8@gmail.com`. No backend or database is required.
+
+## Deployment
+
+The root `postinstall` script installs the frontend dependencies automatically. `vercel.json` configures Vercel to publish `client/dist` and route React pages through `index.html`.

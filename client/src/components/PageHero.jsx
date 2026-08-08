@@ -1,0 +1,1 @@
+export default function PageHero({number,kicker,title,accent,description}){return <section className="page-hero"><div className="orb"></div><p className="kicker"><span>{number}</span>{kicker}</p><h1>{title}<br/><em>{accent}</em></h1><p className="page-description">{description}</p></section>}

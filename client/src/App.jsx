@@ -7,7 +7,8 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Contact from './pages/Contact';
+import CV from './pages/CV';
 import NotFound from './pages/NotFound';
 
 function ScrollTop(){const {pathname}=useLocation();useEffect(()=>{window.scrollTo(0,0)},[pathname]);return null}
-export default function App(){return <><ScrollTop/><Routes><Route element={<Layout/>}><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/skills" element={<Skills/>}/><Route path="/projects" element={<Projects/>}/><Route path="/projects/:slug" element={<ProjectDetail/>}/><Route path="/contact" element={<Contact/>}/><Route path="*" element={<NotFound/>}/></Route></Routes></>}
+export default function App(){return <><ScrollTop/><Routes><Route element={<Layout/>}><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/skills" element={<Skills/>}/><Route path="/projects" element={<Projects/>}/><Route path="/projects/:slug" element={<ProjectDetail/>}/><Route path="/cv" element={<CV/>}/><Route path="/contact" element={<Contact/>}/><Route path="*" element={<NotFound/>}/></Route></Routes></>}

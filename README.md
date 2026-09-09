@@ -31,3 +31,11 @@ The contact form opens the visitor's email application with the completed messag
 ## Deployment
 
 The root `postinstall` script installs the frontend dependencies automatically. `vercel.json` configures Vercel to publish `client/dist` and route React pages through `index.html`.
+
+## CV
+
+The `/cv` page presents the existing portfolio details as a professional profile.
+To enable the download button, add the supplied CV as
+`client/public/assets/abdisamad-guure-cv.pdf` and rebuild. Until that file is
+provided, the page offers a CV request by email. No employment or education
+history has been inferred.
